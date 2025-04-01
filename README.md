@@ -68,3 +68,88 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# To-Do List con React y Hooks
+
+Este es un proyecto de lista de tareas (To-Do List) creado con React utilizando `useState`, `useEffect`, `useContext` y `useReducer`. También se implementa un hook personalizado para persistir datos en `localStorage`.
+
+## Instalación
+
+### 1. Clonar el repositorio
+```sh
+git clone <URL del repositorio>
+cd todo-app
+```
+
+### 2. Instalar dependencias
+```sh
+npm install
+```
+
+### 3. Ejecutar la aplicación
+```sh
+npm start
+```
+
+## Estructura del Proyecto
+```
+todo-app/
+│── src/
+│   ├── components/
+│   │   ├── AddTodo.js
+│   │   ├── TodoList.js
+│   ├── context/
+│   │   ├── TodoContext.js
+│   ├── hooks/
+│   │   ├── useLocalStorage.js
+│   ├── App.js
+│── package.json
+│── README.md
+```
+
+## Explicación de Archivos
+
+### `src/App.js`
+Componente principal que envuelve la aplicación con el `TodoProvider` y renderiza la lista de tareas y el formulario de entrada.
+
+### `src/context/TodoContext.js`
+Define un `Context` para manejar el estado global de las tareas con `useReducer` y `useEffect` para sincronizar con `localStorage`.
+
+### `src/hooks/useLocalStorage.js`
+Hook personalizado que maneja la persistencia de datos en `localStorage`.
+
+### `src/components/AddTodo.js`
+Formulario para agregar nuevas tareas, manejando el estado con `useState` y utilizando `useContext` para despachar acciones al `Reducer`.
+
+### `src/components/TodoList.js`
+Lista las tareas almacenadas y permite eliminarlas mediante el `dispatch` de `useReducer`.
+
+## Subida a GitHub
+
+1. Inicializar Git:
+```sh
+git init
+git add .
+git commit -m "Proyecto To-Do List con hooks"
+```
+
+2. Agregar el repositorio remoto y subir los cambios:
+```sh
+git branch -M main
+git remote add origin <URL del repositorio>
+git push -u origin main
+```
+
+## Tecnologías utilizadas
+- React
+- Hooks (`useState`, `useEffect`, `useContext`, `useReducer`)
+- localStorage
+
+## Autor
+Tu Nombre
+
+---
+
+¡Listo! Con esto tienes toda la documentación para que cualquiera pueda instalar y usar la aplicación.
+
+

@@ -146,10 +146,7 @@ git push -u origin main
 - localStorage
 
 ## Autor
-Tu Nombre
+Uriel Cordoba
 
 ---
-
-¡Listo! Con esto tienes toda la documentación para que cualquiera pueda instalar y usar la aplicación.
-
 
